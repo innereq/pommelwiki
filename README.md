@@ -15,6 +15,7 @@ Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consist
   - [ ] Documentation has been moved out of the wiki and doesn't come with the sites.
   - [ ] Markdown syntax has been added and has replaced the standard markup.
   - [X] Containerization using Dockerfile.
+  - [X] Properly working wikilinks with dots. https://www.pmwiki.org/wiki/Cookbook/DotsInLinks
 
 The original README text is below.
 

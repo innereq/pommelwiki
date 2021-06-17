@@ -843,7 +843,7 @@ function MakePageName($basepage, $str) {
     "/[^$PageNameChars]+/" => ' ',    # convert everything else to space
     '/((^|[^-\\w])\\w)/' => 'cb_toupper', # CamelCase
     '/ /' => ''));
-  SDV($MakePageNameSplitPattern, '/[.\\/]/');
+  SDV($MakePageNameSplitPattern, '/\\/|\\.(?!\\s)/');
   $str = preg_replace('/[#?].*$/', '', $str);
   $m = preg_split($MakePageNameSplitPattern, $str);
   if (count($m)<1 || count($m)>2 || $m[0]=='') return '';
