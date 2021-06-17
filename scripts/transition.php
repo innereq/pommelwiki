@@ -244,7 +244,7 @@ if (@$Transition['pageeditfmt']) {
     <input type='submit' name='post' value=' $[Save] ' />
     <input type='submit' name='preview' value=' $[Preview] ' />
     <input type='reset' value=' $[Reset] ' /></form></div>");
-  if (@$_POST['preview']) 
+  if (@$_POST['preview'])
     SDV($PagePreviewFmt, "<div id='wikipreview'>
       <h2 class='wikiaction'>$[Preview \$FullName]</h2>
       <p><b>$[Page is unsaved]</b></p>
@@ -255,15 +255,7 @@ if (@$Transition['pageeditfmt']) {
     &$PageEditFmt, 'wiki:$[PmWiki.EditQuickReference]', &$PagePreviewFmt,
     &$PageEndFmt));
   $EditMessageFmt = implode('', $MessagesFmt) . $EditMessageFmt;
-  if ($action=='edit' && IsEnabled($EnableGUIButtons, 0)) 
-    array_push($EditFunctions, 'GUIEdit');
 } else $MessagesFmt[] = @$EditMessageFmt;
-
-    
-function GUIEdit($pagename, &$page, &$new) {
-  global $EditMessageFmt;
-  $EditMessageFmt .= GUIButtonCode($pagename);
-}
 
 ## mainpages:
 ##   In 2.0.beta44 several utility pages change location to the new Site

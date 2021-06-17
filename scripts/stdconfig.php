@@ -81,8 +81,6 @@ if (!function_exists(@$DiffFunction))
   include_once("$FarmD/scripts/phpdiff.php");
 if ($action=='crypt')
   include_once("$FarmD/scripts/crypt.php");
-if ($action=='edit')
-  include_once("$FarmD/scripts/guiedit.php");
 if (IsEnabled($EnableForms,1))
   include_once("$FarmD/scripts/forms.php");       # must come after prefs
 if (IsEnabled($EnableUpload,0))

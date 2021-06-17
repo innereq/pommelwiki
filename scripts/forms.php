@@ -354,13 +354,8 @@ $Conditions['e_preview'] = '(boolean)$_REQUEST["preview"]';
 Markup('e_preview', 'directives',
   '/^\\(:e_preview:\\)/', "MarkupInputForms");
 
-# If we didn't load guiedit.php, then set (:e_guibuttons:) to
-# simply be empty.
-Markup('e_guibuttons', 'directives', '/\\(:e_guibuttons:\\)/', '');
-
-# Prevent (:e_preview:) and (:e_guibuttons:) from 
-# participating in text rendering step.
-SDV($SaveAttrPatterns['/\\(:e_(preview|guibuttons):\\)/'], ' ');
+# Prevent (:e_preview:) from participating in text rendering step.
+SDV($SaveAttrPatterns['/\\(:e_preview:\\)/'], ' ');
 
 $TextScrollTop = intval(@$_REQUEST['textScrollTop']);
 SDVA($InputTags['e_form'], array(
