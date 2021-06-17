@@ -11,6 +11,7 @@ Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consist
   - [ ] Unneeded scripts are either deleted or moved to the cookbook.
   - [ ] Documentation is moved out of the wiki and isn't shipped with sites.
   - [ ] Added and enabled by default Markdown syntax instead of the standard one.
+  - [X] Containerization using Dockerfile.
 
 The original README text is below.
 
