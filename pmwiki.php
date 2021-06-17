@@ -45,11 +45,7 @@ SDV($FarmD,dirname(__FILE__));
 SDV($WorkDir,'wiki.d');
 define('PmWiki',1);
 if (preg_match('/\\w\\w:/', $FarmD)) exit();
-@include_once("$FarmD/scripts/version.php");
-$GroupPattern = '[[:upper:]][\\w]*(?:-\\w+)*';
-$NamePattern = '[[:upper:]\\d][\\w]*(?:-\\w+)*';
-$BlockPattern = 'form|div|table|t[rdh]|p|[uo]l|d[ltd]|h[1-6r]|pre|blockquote';
-$WikiWordPattern = '[[:upper:]][[:alnum:]]*(?:[[:upper:]][[:lower:]0-9]|[[:lower:]0-9][[:upper:]])[[:alnum:]]*';
+include_once("$FarmD/scripts/version.php");
 $WikiDir = new PageStore('wiki.d/{$FullName}');
 $WikiLibDirs = array(&$WikiDir,new PageStore('$FarmD/wikilib.d/{$FullName}'));
 $PageFileEncodeFunction = 'PUE'; # only used if $WikiDir->encodefilenames is set
@@ -96,7 +92,6 @@ $WikiWordCount['PmWiki'] = 1;
 $TableRowIndexMax = 1;
 $UrlExcludeChars = '<>"{}|\\\\^`()[\\]\'';
 $QueryFragPattern = "[?#][^\\s$UrlExcludeChars]*";
-$SuffixPattern = '(?:-?[[:alnum:]]+)*';
 $LinkPageSelfFmt = "<a class='selflink' href='\$LinkUrl' title='\$LinkAlt'>\$LinkText</a>";
 $LinkPageExistsFmt = "<a class='wikilink' href='\$LinkUrl' title='\$LinkAlt'>\$LinkText</a>";
 $LinkPageCreateFmt = 
@@ -162,13 +157,10 @@ $PageTextVarPatterns = array(
   '(:var:...:)' => '/(\\(: *(\\w[-\\w]*) *:(?!\\))\\s?)(.*?)(:\\))/s'
   );
 
+## UTF-8 encoding by default.
+include_once("$FarmD/scripts/xlpage-utf-8.php");
 
 $WikiTitle = 'PmWiki';
-$Charset = 'ISO-8859-1';
-$HTTPHeaders = array(
-  "Expires: Tue, 01 Jan 2002 00:00:00 GMT",
-  "Cache-Control: no-store, no-cache, must-revalidate",
-  "Content-type: text/html; charset=ISO-8859-1;");
 $CacheActions = array('browse','diff','print');
 $EnableHTMLCache = 0;
 $NoHTMLCache = 0;

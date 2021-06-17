@@ -5,7 +5,7 @@ The project is named after Coco Pommel — a “My Little Pony: Friendship is Ma
 Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consisting of:
 
 - First stable release.
-  - [ ] UTF-8 character encoding is enabled by default.
+  - [X] UTF-8 character encoding is enabled by default.
   - [ ] Lowercase URLs with hyphens as separators are enabled by default.
   - [X] Responsive skin is the only option and enabled by default.
   - Unneeded scripts are either deleted or moved to the cookbook.
