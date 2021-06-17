@@ -46,10 +46,6 @@ include_once("scripts/xlpage-utf-8.php");
 # $EnableBlocklist = 1;                    # enable manual blocklists
 # $EnableBlocklist = 10;                   # enable automatic blocklists
 
-##  To enable markup syntax from the Creole common wiki markup language
-##  (http://www.wikicreole.org/), include it here:
-# include_once("scripts/creole.php");
-
 ##  Some sites may want leading spaces on markup lines to indicate
 ##  "preformatted text blocks", set $EnableWSPre=1 if you want to do
 ##  this.  Setting it to a higher number increases the number of
