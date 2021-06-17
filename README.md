@@ -8,7 +8,9 @@ Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consist
   - [ ] UTF-8 by default.
   - [ ] Lowercase URLs with hyphen separators by default.
   - [X] Responsive skin is the only option and enabled by default.
-  - [ ] Unneeded scripts are either deleted or moved to the cookbook.
+  - Unneeded scripts are either deleted or moved to the cookbook.
+    - [X] guiedit.php - ugly, deleted.
+    - [ ] wikiwords.php - doesn't work with UTF-8 properly, deleted.
   - [ ] Documentation is moved out of the wiki and isn't shipped with sites.
   - [ ] Added and enabled by default Markdown syntax instead of the standard one.
   - [X] Containerization using Dockerfile.
