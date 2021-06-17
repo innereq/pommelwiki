@@ -5,14 +5,14 @@ The project is named after Coco Pommel — a “My Little Pony: Friendship is Ma
 Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consisting of:
 
 - First stable release.
-  - [ ] UTF-8 by default.
-  - [ ] Lowercase URLs with hyphen separators by default.
+  - [ ] UTF-8 character encoding is enabled by default.
+  - [ ] Lowercase URLs with hyphens as separators are enabled by default.
   - [X] Responsive skin is the only option and enabled by default.
   - Unneeded scripts are either deleted or moved to the cookbook.
     - [X] guiedit.php - ugly, deleted.
     - [ ] wikiwords.php - doesn't work with UTF-8 properly, deleted.
-  - [ ] Documentation has moved out of the wiki and isn't shipped with sites.
-  - [ ] Added and enabled by default Markdown syntax instead of the standard one.
+  - [ ] Documentation has moved out of the wiki and doesn't come with the sites.
+  - [ ] Markdown syntax has been added and has replaced the standard markup.
   - [X] Containerization using Dockerfile.
 
 The original README text is below.
