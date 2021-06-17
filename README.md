@@ -11,7 +11,7 @@ Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consist
   - Unneeded scripts are either deleted or moved to the cookbook.
     - [X] guiedit.php - ugly, deleted.
     - [ ] wikiwords.php - doesn't work with UTF-8 properly, deleted.
-  - [ ] Documentation is moved out of the wiki and isn't shipped with sites.
+  - [ ] Documentation has moved out of the wiki and isn't shipped with sites.
   - [ ] Added and enabled by default Markdown syntax instead of the standard one.
   - [X] Containerization using Dockerfile.
 
