@@ -1,5 +1,8 @@
 This directory contains the files to display pages in PmWiki according
-to the default layout.  
+to the default "responsive" layout, adaptive for large and small screens.
+
+Note that currently this layout is "beta". It requires relatively recent
+mobile and desktop browsers (post-2010).
 
 ==>Don't edit these files directly, as you may lose your edits the
 next time you upgrade PmWiki!
@@ -13,10 +16,13 @@ would set
 in local/config.php.
 
 The files in this directory:
-    pmwiki.tmpl   -- the default template for page layouts
-    pmwiki.css    -- PmWiki's default css
-    pmwiki-32.gif -- the PmWiki logo
+    skin.tmpl   -- the default template for page layouts
+    skin.css    -- PmWiki's default css
+    skin.php    -- some template functions
+    skin.js     -- some template functions (browser)
+    *.svg       -- icons
 
+Note, the default PmWiki logo is in the "pmwiki" template directory.
 If you just want to change the logo, you can do it by setting $PageLogoUrl
 to the url location of your logo.
 

@@ -7,6 +7,7 @@ Its codebase is forked from PmWiki 2.2.139. Planned and made changes are consist
 - First stable release.
   - [ ] UTF-8 by default.
   - [ ] Lowercase URLs with hyphen separators by default.
+  - [X] Responsive skin is the only option and enabled by default.
   - [ ] Unneeded scripts are either deleted or moved to the cookbook.
   - [ ] Documentation is moved out of the wiki and isn't shipped with sites.
   - [ ] Added and enabled by default Markdown syntax instead of the standard one.
